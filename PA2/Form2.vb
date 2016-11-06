@@ -89,6 +89,8 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Dim prev As Form1 = New Form1
+        prev.Show()
         Dispose()
     End Sub
 

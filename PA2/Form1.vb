@@ -22,16 +22,17 @@
 
         If ((user1Name = txtUserName.Text And user1PWD = txtPWD.Text) Or (user2Name = txtUserName.Text And user2PWD = txtPWD.Text) Or (user3Name = txtUserName.Text And user3PWD = txtPWD.Text)) Then
 
-            If (count = 5) Then                         '5 parak count ekke gnnwa nattn invalid login ekk nis ain wenwa
-                MessageBox.Show("login expired")
-                Dispose()
-            Else
-                count = 0
+            'If (count = 5) Then                         '5 parak count ekke gnnwa nattn invalid login ekk nis ain wenwa
+            '    MessageBox.Show("login expired")
+            '    Dispose()
+            'Else
+            '    count = 0
 
-                Dim nextForm As Form2 = New Form2
+            Dim nextForm As Form2 = New Form2
                 nextForm.Show()
+                Me.Hide()
 
-            End If
+            'End If
 
         Else
             If (count = 3) Then
